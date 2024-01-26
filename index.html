@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Valid Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Valid Form</h1>
+      <hr>
+      <form method="post" onsubmit="return validate();">
+        <label>User-name : </label>
+        <input type="number" name="username" id="username">
+        <button onclick="valid_username();">check</button>
+        <br>
+        <label>E-mail : </label>
+        <input type="email" name="e-mail" id="e-mail">
+        <button onclick="valid_email();">check</button>
+        <br>
+        <label>Password : </label>
+        <input type="password" name="password" id="password">
+        <button onclick="valid_password();">check</button>
+        <br>
+        <input type="submit">
+        <p id="result"></p>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
